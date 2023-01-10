@@ -6,8 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/FirstInteraction.unity
+    guid: 7883445c7a485c243a1d08eda8ac974c
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8f83f843b2763824aa5e179ef01ee5c7,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7e85e5ff9503c8841a64c1991ff827d3,
+      type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: ebc5e66fb96e6b34d809f636260692c7,
       type: 2}
