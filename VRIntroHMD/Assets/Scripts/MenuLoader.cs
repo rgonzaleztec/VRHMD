@@ -1,14 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuLoader : MonoBehaviour
 {
-    // Start is called before the first frame update
-  
+    private AudioSource _miAudioAmbiente;
+    [SerializeField] Slider _miSliderVolumen;
+
+
+    private void Start()
+    {
+        _miAudioAmbiente = GetComponent<AudioSource>();
+    }
+
+
+    public void CambiarVolumen()
+    {
+        _miAudioAmbiente.volume = _miSliderVolumen.value;
+    }
+
+
     public void CargarNuevaEscena(int numEscena)
     {
         SceneManager.LoadScene(numEscena);
+    }
+
+
+    public void SalirApp()
+    {
+        Application.Quit();
     }
 }
