@@ -5,7 +5,7 @@ public class Disparar : MonoBehaviour
 {
     public Transform posicionBala;
     public GameObject BalaPrefab;
-    public float velocidadBala = 10;
+    public float velocidadBala = 20;
 
 
    public void DispararUnaBala()
